@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders & Returns</title>
+    <link rel="stylesheet" href="Amaze.css">   
+
+</head>
+<body>
+    <nav>
+        <a href="Amaze.html">
+            <img src="./assets/amazon_logo.png" width="100">
+        </a>
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="15" width="20">
+            <div>
+                <p>Deliver to</p>
+                <h1>United States</h1>
+            </div>
+        </div>
+        <div class="nav-search">
+            <div class="nav-search-category">
+               <p>All</p>
+               <img src="./assets/dropdown_icon.png" width="10px">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search">
+            <img src="./assets/search_icon.png" class="nav-search-icon">
+
+        </div>
+        <div class="nav-language">
+            <img src="./assets/us_flag.png" width="25px">
+            <p>En</p>
+            <img src="./assets/dropdown_icon.png" width="8px">
+        </div>
+        <div class="nav-text">
+
+            <P><a href="signin.html">Sign In</a></P>
+            <h1><a href="#" id="accountsListsLink">Accounts & Lists
+                <img src="./assets/dropdown_icon.png" width="8px">
+            </h1>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Account</a></li>
+                  <li><a class="dropdown-item" href="#">Orders</a></li>
+                  <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                  <li><a class="dropdown-item" href="#">Recommendations</a></li>
+                  <li><a class="dropdown-item" href="#">PrimeVideo</a></li>
+                  <li><a class="dropdown-item" href="#">Devices</a></li>
+                  <li><a class="dropdown-item" href="#">Switch Accounts</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-text">
+            <p><a href="orders.html"><h5>Orders</h5></a></p>
+            <p>& Returns</p>
+        </div>
+        <a href="cart.html" class="nav-cart">
+            <img src="./assets/cart_icon.png" width="35px">
+            <h4>Cart</h4>
+        </a>
+    </nav>
+    <!--------------------------------------------------------- Navbar ----------------------------------------------------->
+         <div class="nav-bottom">
+            <div>
+                <img src="./assets/menu_icon.png" width="25px">
+                
+            </div>
+            <p><a href="#product-slider-with-price">Today's Deals</a></p>
+            <p><a href=""></a> Service</p>
+            <p><a href="seller.html">Register</a></p>
+            <p><a href="#Gift-Cards">Gift Cards</a></p>
+            <p><a href="seller.html">Sell</a></p>
+         </div>
+         <div class="container1">
+            <div class="logo">
+                <a href="#"><img src="./assets/amazon_logo.png" alt="logo"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Buy Again</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <h1>Your Orders</h1>
+                <p>Track, return, or buy things again</p>
+                <div class="search">
+                    <input type="text" placeholder="Search all orders" class="search-input">
+                    <div class="search-icon">
+                        <img src="./assets/search_icon.png" width="20px" >
+                    </div>
+                </div>
+                <div class="filter">
+                    <select class="select-filter" onchange="filterOrder()">
+                        <option>All</option>
+                        <option>Past 3 months</option>
+                        <option>Past 6 months</option>
+                        <option>Past year</option>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                    </select>
+                </div>
+                <div class="table">
+                    
+                    <table id="orders-table">
+                        <thead>
+                            <tr>
+                                <div class="order-container"  id="orderContainer">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3WDf2CYNrcYZMbjxT6Eey03s00IM4CLFVoA&usqp=CAU" height="120px" width="120px" alt="Product Image">
+                                    <div class="order-details">
+                                        <p><strong>Product Name:</strong>Skipping Rope With Digital Display</p>
+                                        <p><strong>Product Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p><strong>Product Price:</strong> &#8377 608</p>
+                                        <p><strong>Date of Order:</strong> January 21, 2024</p>
+                                        <p class="status"><strong>Status:</strong>Delivered</p>
+                                        <div class="order-buttons">
+                                            <button>Buy Again</button>
+                                            <button>View Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-container"  id="orderContainer">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMg5JMsd_e-45qbQuTrDAQHsLZwcDowiB5L52D40dUQgcKLiUgCD6xxZvEk1u1retYmJk&usqp=CAU" height="120px" width="120px" alt="Product Image">
+                                    <div class="order-details">
+                                        <p><strong>Product Name:</strong>Whey Protein Powder</p>
+                                        <p><strong>Product Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p><strong>Product Price:</strong> &#8377 2589</p>
+                                        <p><strong>Date of Order:</strong> February 20, 2024</p>
+                                        <p class="status"><strong>Status:</strong>In Transit</p>
+                                        <div class="order-buttons">
+                                            <button>Buy Again</button>
+                                            <button>View Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-container"  id="orderContainer">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG3DCRhBNPG-MiiwuAroq8oKScihGupQDCfA&usqp=CAU" height="120px" width="120px" alt="Product Image">
+                                    <div class="order-details">
+                                        <p><strong>Product Name:</strong>Puma Shoes</p>
+                                        <p><strong>Product Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p><strong>Product Price:</strong> &#8377 3499</p>
+                                        <p><strong>Date of Order:</strong> January 27, 2024</p>
+                                        <p class="status"><strong>Status:</strong>Delivered</p>
+                                        <div class="order-buttons">
+                                            <button>Buy Again</button>
+                                            <button>View Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-container"  id="orderContainer">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRufwT6rxpwEh1gSTG594FkDADVFu0eEmhXQ&usqp=CAU" height="120px" width="120px" alt="Product Image">
+                                    <div class="order-details">
+                                        <p><strong>Product Name:</strong>GM Extension Box With 2M Wire</p>
+                                        <p><strong>Product Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p><strong>Product Price:</strong> &#8377 315</p>
+                                        <p><strong>Date of Order:</strong> December 15, 2024</p>
+                                        <p class="status"><strong>Status:</strong>Returned</p>
+                                        <div class="order-buttons">
+                                            <button>Buy Again</button>
+                                            <button>View Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-container"  id="orderContainer">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAEFft8vg4t6OhKp-1XOwlakqaqo7XB4xuHw&usqp=CAU" height="120px" width="120px" alt="Product Image">
+                                    <div class="order-details">
+                                        <p><strong>Product Name:</strong>Soft Cotton Turkey Towel</p>
+                                        <p><strong>Product Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p><strong>Product Price:</strong> &#8377 285</p>
+                                        <p><strong>Date of Order:</strong> February 21, 2024</p>
+                                        <p class="status"><strong>Status:</strong>In Transit</p>
+                                        <div class="order-buttons">
+                                            <button>Buy Again</button>
+                                            <button>View Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-container"  id="orderContainer">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxpKbXuhugH3sCfJwmHxuetR9v3r7QswGgQ&usqp=CAU" height="120px" width="120px" alt="Product Image">
+                                    <div class="order-details">
+                                        <p><strong>Product Name:</strong>Yonex Badminton Rackets</p>
+                                        <p><strong>Product Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <p><strong>Product Price:</strong> &#8377 1799</p>
+                                        <p><strong>Date of Order:</strong> February 20, 2024</p>
+                                        <p class="status"><strong>Status:</strong>In Transit</p>
+                                        <div class="order-buttons">
+                                            <button>Buy Again</button>
+                                            <button>View Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!---------------->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        <style>
+            .main {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .search {
+                display: flex;
+                margin-bottom: 20px;
+            }
+            .search-input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+            .search-icon {
+                padding: 10px;
+                cursor: pointer;
+            }
+            .filter {
+                margin-bottom: 20px;
+            }
+            .select-filter {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+        </style>
+        <br>
+    <footer>
+        <ul id="footer 1">
+            <h4>Get to Know Us</h4>
+            <br>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Press Releases</li>
+            <li>Amazon Science</li>
+        </ul>
+        <ul id="footer 2">
+            <h4>Connect with us</h4>
+            <br>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Email</li>
+        </ul>
+        <ul id="footer 3">
+            <h4>Make Money With Us</h4>
+            <br>
+            <li>Sell on Amazon</li>
+            <li>Sell under Amazon Accelerator</li>
+            <li>Protect and Build Your Brand</li>
+            <li>Amazon Global Selling</li>
+            <li>Become an Affiliate</li>
+        </ul>
+        <ul id="footer 4">
+            <h4>Let Us Help You</h4>
+            <br>
+            <li>COVID-19 and Amazon</li>
+            <li> Your Account</li>
+            <li>Returns Centre</li>
+            <li>100% Purchase Protection</li>
+            <li>Help</li>
+        </ul>
+        <img src="./assets/amazon_logo.png" width="100">
+        <p>&#169; 1996-2004, Amazon.com, Inc. or its affiliates</p>
+     </footer>
+         <script src="Amaze.js"></script>
+</body>
+</html>
