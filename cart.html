@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="Amaze.css">
+
+</head>
+<body>
+    <nav>
+        <a href="Amaze.html">
+            <img src="./assets/amazon_logo.png" width="100">
+        </a>
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="15" width="20">
+            <div>
+                <p>Deliver to</p>
+                <h1>United States</h1>
+            </div>
+        </div>
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <img src="./assets/dropdown_icon.png" width="10px">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search Amazon">
+            <img src="./assets/search_icon.png" class="nav-search-icon">
+
+        </div>
+        <div class="nav-language">
+            <img src="./assets/us_flag.png" width="25px">
+            <p>En</p>
+            <img src="./assets/dropdown_icon.png" width="8px">
+        </div>
+        <div class="nav-text">
+
+            <P><a href="signin.html">Sign In</a></P>
+            <h1><a href="#" id="accountsListsLink">Accounts & Lists
+                    <img src="./assets/dropdown_icon.png" width="8px">
+            </h1>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="signin.html">Account</a></li>
+                    <li><a class="dropdown-item" href="orders.html">Orders</a></li>
+                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                    <li><a class="dropdown-item" href="#">Recommendations</a></li>
+                    <li><a class="dropdown-item" href="#">PrimeVideo</a></li>
+                    <li><a class="dropdown-item" href="#">Devices</a></li>
+                    <li><a class="dropdown-item" href="#">Switch Accounts</a></li>
+                    <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-text">
+            <p><a href="orders.html">
+                    <h5>Orders</h5>
+                </a></p>
+            <p>& Returns</p>
+        </div>
+        <a href="cart.html" class="nav-cart">
+            <img src="./assets/cart_icon.png" width="35px">
+            <h4>Cart</h4>
+        </a>
+    </nav>
+    <h1>Your Shopping Cart</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_ttvYmtQ5RfLzkYh0qUPLndwGoVycm0NKQ&usqp=CAU" alt="Product Image" class="product-image">
+                    <input type="checkbox" class="item-checkbox" checked> Ganesh Multipurpose Plastic Vegetable Master  Chopping Vegetables and Fruits for Your Kitchen, XL Large Jumbo Chopper (900 Ml)
+                    <br>
+                    <span class="discount">71% off</span>
+                    <br>
+                    M.R.P.: ₹675.00
+                    <br>
+                    In stock
+                    <br>
+                    Eligible for FREE Shipping
+                    <br>
+                    <label class="gift-checkbox">
+                        <input type="checkbox"> This will be a gift
+                    </label>
+                </td>
+                <td>₹199.00</td>
+                <td>
+                    <input type="number" value="1" min="1">
+                </td>
+                <td>₹199.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./assets/trimmer.jpg" alt="Product Image" class="product-image">
+                    <input type="checkbox" class="item-checkbox" checked>Philips Battery Powered SkinProtect Beard Trimmer for Men
+                    <br>
+                    <span class="discount">71% off</span>
+                    <br>
+                    M.R.P.: ₹675.00
+                    <br>
+                    In stock
+                    <br>
+                    Eligible for FREE Shipping
+                    <br>
+                    <label class="gift-checkbox">
+                        <input type="checkbox"> This will be a gift
+                    </label>
+                </td>
+                <td>₹299.00</td>
+                <td>
+                    <input type="number" value="1" min="1">
+                </td>
+                <td>₹299.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./assets/badminton racket.jpg" alt="Product Image" class="product-image">
+                    <input type="checkbox" class="item-checkbox" checked> YONEX ZR 100 Light Aluminium Badminton Racquet with Full Cover (Black/Red) - Set of 2
+                    <br>
+                    <span class="discount">71% off</span>
+                    <br>
+                    M.R.P.: ₹675.00
+                    <br>
+                    In stock
+                    <br>
+                    Eligible for FREE Shipping
+                    <br>
+                    <label class="gift-checkbox">
+                        <input type="checkbox"> This will be a gift
+                    </label>
+                </td>
+                <td>₹399.00</td>
+                <td>
+                    <input type="number" value="1" min="1">
+                </td>
+                <td>₹399.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="total">
+        <p>Total: ₹897.00</p>
+    </div>
+
+    <button class="checkout-btn">Proceed to Checkout</button>
+
+    <footer>
+        <ul id="footer 1">
+            <h4>Get to Know Us</h4>
+            <br>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Press Releases</li>
+            <li>Amazon Science</li>
+        </ul>
+        <ul id="footer 2">
+            <h4>Connect with us</h4>
+            <br>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Email</li>
+        </ul>
+        <ul id="footer 3">
+            <h4>Make Money With Us</h4>
+            <br>
+            <li>Sell on Amazon</li>
+            <li>Sell under Amazon Accelerator</li>
+            <li>Protect and Build Your Brand</li>
+            <li>Amazon Global Selling</li>
+            <li>Become an Affiliate</li>
+        </ul>
+        <ul id="footer 4">
+            <h4>Let Us Help You</h4>
+            <br>
+            <li>COVID-19 and Amazon</li>
+            <li> Your Account</li>
+            <li>Returns Centre</li>
+            <li>100% Purchase Protection</li>
+            <li>Help</li>
+        </ul>
+        <img src="./assets/amazon_logo.png" width="100">
+        <p>&#169; 1996-2004, Amazon.com, Inc. or its affiliates</p>
+     </footer>
+    <style>
+         h1 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .total {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .checkout-btn {
+            padding: 10px;
+            background-color: #ff9900;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .gift-checkbox {
+            margin-top: 10px;
+        }
+        .product-image {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
+        }
+    </style>
+</body>
+</html>
